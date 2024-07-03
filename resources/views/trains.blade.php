@@ -11,7 +11,13 @@
 			<p>Orario di Arrivo: {{ $train->arrival_time }}</p>
 			<p>Codice Treno: {{ $train->train_code }}</p>
 			<p>Numero Carrozze Totali: {{ $train->number_carriages }}</p>
-			<p>In Orario? {{ $train->in_time }}</p>
+			<p>In Orario?
+				@if ($train->in_time == 0)
+					In orario
+				@else
+					In Ritardo
+				@endif
+			</p>
 		</div>
 	@endforeach
 @endsection
