@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	<a href="{{ route('train') }}"><button class="btn btn-primary">Vai a Treni</button></a>
+	<div class="text-center">
+		<a href="{{ route('train') }}"><button class="btn btn-primary">Clicca per andare ai Treni</button></a>
+	</div>
 @endsection
