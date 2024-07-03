@@ -9,8 +9,8 @@
 					<p>Nome. {{ $train->name }}</p>
 					<p>Stazione di Partenza: {{ $train->departure_station }}</p>
 					<p>Stazione di Arrivo: {{ $train->arrival_station }}</p>
-					<p>Orario di Partenza: {{ $train->departure_time }}</p>
-					<p>Orario di Arrivo: {{ $train->arrival_time }}</p>
+					<p>Orario di Partenza: {{ date('H:i:s', strtotime($train->departure_time)) }}</p>
+					<p>Orario di Arrivo: {{ date('H:i:s', strtotime($train->arrival_time)) }}</p>
 					<p>Codice Treno: {{ $train->train_code }}</p>
 					<p>Numero Carrozze Totali: {{ $train->number_carriages }}</p>
 					<p>In Orario?
