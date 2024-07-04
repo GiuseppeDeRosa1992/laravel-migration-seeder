@@ -42,3 +42,15 @@ Questo git-template fornisce lo scaffold di una web application realizzata con L
 	npm run dev
 	```
 - Puntare il browser all'indirizzo mostrato in terminale per controllare che tutto funzioni.
+
+# lancia da termianle php artisan migrate per creare una migrazione
+
+# lancia da termianle php artisan make:model "nome che serve iniziale maiuscolo" per creare la classe
+
+# lancia da termianle php artisan make:controller Guest/PageController dove mettere i dati che prendo dai database richiamando la classe
+
+# lancia php artisan migrate:reset per resettare le migrate (se ci sono dati dentro stai attento a questo comando) 
+
+# lancia php make:seeder NomeTableSeeder
+
+# lancia php makartisan db:seed --class=NomeTableSeeder per mettere nel database i dati che genero tramite seeder
